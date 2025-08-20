@@ -1,0 +1,15 @@
+Exercício 9. (d)
+
+Exercício 10.
+
+(a) Funciona. Esta linha faz o ponteiro p1 parar de apontar para a e começar a apontar para a mesma variável que p2 aponta (ou seja, b).
+
+(b) Funciona. É apenas uma conta em duas partes. Primeiro, ela soma o valor de a (20) com b (15), e guarda o resultado (35) de volta em b. Depois, pega esse mesmo resultado (35) e o guarda em a. No fim, tanto a quanto b ficam com o valor 35.
+
+(c) Funciona. O código faz duas perguntas cuja resposta é "sim". Em C, "sim" (verdadeiro) vale 1. Como as duas partes são verdadeiras, a conta final vira b = 1 + 1. Portanto, b passa a valer 2.
+
+(d) Não funciona. Aqui, o código tenta misturar coisas de tipos diferentes. pp2 é um "ponteiro para um ponteiro", enquanto p1 é apenas um "ponteiro".
+
+(e) Não funciona. A parte (p1 && p2) é uma pergunta lógica que resulta no número 1 (verdadeiro). O código então tenta fazer o ponteiro p1 apontar para o "endereço de memória nº 1", o que não faz sentido. Um ponteiro precisa do endereço de uma variável, não de um número solto como 1.
+
+(f) Funciona. A expressão faz uma pergunta: p1 e p2 apontam para o mesmo lugar? A resposta é "não". Por causa disso, o código ignora a primeira opção e escolhe a segunda, que é o valor de a (20). No final, a operação apenas guarda o valor 20 de volta na variável a.
